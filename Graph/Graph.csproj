@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{147BDCB9-C95B-4E4D-B51C-FC6E8D37FB56}</ProjectGuid>
+    <ProjectGuid>{276DCC0D-19FC-4723-BA56-45DED1DA880C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hash_Table</RootNamespace>
-    <AssemblyName>Hash Table</AssemblyName>
+    <RootNamespace>Graph</RootNamespace>
+    <AssemblyName>Graph</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HashTable.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Graph.cs" />
+    <Compile Include="GraphEdge.cs" />
+    <Compile Include="GraphVertex.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

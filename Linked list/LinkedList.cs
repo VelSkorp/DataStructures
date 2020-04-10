@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Hash_Table
+namespace Linked_list
 {
     public class Node<T>
     {
