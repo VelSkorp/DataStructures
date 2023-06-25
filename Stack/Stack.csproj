@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EC16FE56-77D4-4A37-8236-1BC352D2E3B8}</ProjectGuid>
+    <ProjectGuid>{41F2FF2D-0C6F-4160-855A-E4BF24427F20}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Binary_Tree</RootNamespace>
-    <AssemblyName>Binary Tree</AssemblyName>
+    <RootNamespace>Data_Structures</RootNamespace>
+    <AssemblyName>Data Structures</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryTree.cs" />
-    <Compile Include="BinaryTreeNode.cs" />
-    <Compile Include="Programm.cs" />
+    <Compile Include="FixedStack.cs" />
+    <Compile Include="NodeStack.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResizableFixedStack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -2,7 +2,7 @@
 
 namespace Binary_Tree
 {
-    class BinaryTree<T> where T:IComparable
+    public class BinaryTree<T> where T:IComparable
     {
         public BinaryTreeNode<T> RootNode { get; set; }
         public BinaryTreeNode<T> Add(BinaryTreeNode<T> node,BinaryTreeNode<T> currentNode = null)

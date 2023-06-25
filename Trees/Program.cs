@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Binary_Tree
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var binaryTree = new BinaryTree<int>();
             FileStream stream = new FileStream(@".\text.txt", FileMode.Open, FileAccess.Read);

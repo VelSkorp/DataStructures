@@ -1,40 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Linked_list
+namespace LinkedList
 {
     public class Node<T>
     {
+        public T Data { get; set; }
+        public Node<T> Next { get; set; }
+
         public Node (T data)
         {
             Data = data;
         }
-        public T Data { get; set; }
-        public Node<T> Next { get; set; }
     }
-    class LinkedList<T> : IEnumerable<T>
-    {
-        Node<T> head;
-        Node<T> tail;
-        int count;
 
-        public int Count { get { return count; } }
-        public bool IsEmpty { get { return count == 0; } }
+    public class LinkedList<T> : IEnumerable<T>
+    {
+        public int Count { get; private set; }
+        public bool IsEmpty => count == 0;
+
+        private Node<T> head;
+        private Node<T> tail;
+        private int count;
 
         public void Add(T data)
         {
-            Node<T> node = new Node<T>(data);
+            var node = new Node<T>(data);
             if (head == null)
-                head = node;
+            {
+                head = node; 
+            }
             else
-                tail.Next = node;
+            {
+                tail.Next = node; 
+            }
             tail = node;
             count++;
         }
 
         public bool Remove(T data)
         {
-            Node<T> current = head;
+            var current = head;
             Node<T> previous = null;
             while (current != null)
             {
@@ -44,13 +50,17 @@ namespace Linked_list
                     {
                         previous.Next = current.Next;
                         if (current.Next == null)
-                            tail = previous;
+                        {
+                            tail = previous; 
+                        }
                     }
                     else
                     {
                         head = head.Next;
                         if (head == null)
-                            tail = null;
+                        {
+                            tail = null; 
+                        }
                     }
                     count--;
                     return true;
@@ -70,11 +80,13 @@ namespace Linked_list
 
         public bool Contains(T data)
         {
-            Node<T> current = head;
+            var current = head;
             while (current != null)
             {
                 if (current.Data.Equals(data))
-                    return true;
+                {
+                    return true; 
+                }
                 current = current.Next;
             }
             return false;
@@ -82,18 +94,21 @@ namespace Linked_list
 
         public void AppendFirst(T data)
         {
-            Node<T> node = new Node<T>(data);
-            node.Next = head;
+            var node = new Node<T>(data)
+            {
+                Next = head
+            };
             head = node;
             if (count == 0)
-                tail = head;
+            {
+                tail = head; 
+            }
             count++;
-
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            Node<T> current = head;
+            var current = head;
             while (current != null)
             {
                 yield return current.Data;
