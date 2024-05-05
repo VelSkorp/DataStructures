@@ -13,7 +13,15 @@
 		public BinaryTreeNode<T> Root { get; private set; }
 
 		/// <summary>
-		/// Adds a new element to the binary tree.
+		///     <para>
+		///         Adds a new element to the binary tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="data">The data to be added to the binary tree.</param>
 		/// <returns>True if the element is added successfully; otherwise, false.</returns>
@@ -31,7 +39,15 @@
 		}
 
 		/// <summary>
-		/// Finds a node with the specified value in the binary tree.
+		///     <para>
+		///         Finds a node with the specified value in the binary tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to search for in the binary tree.</param>
 		/// <returns>The node with the specified value if found; otherwise, null.</returns>
@@ -47,7 +63,15 @@
 		}
 
 		/// <summary>
-		/// Removes a node with the specified value from the binary tree.
+		///     <para>
+		///         Removes a node with the specified value from the binary tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value of the node to be removed.</param>
 		/// <returns>True if the node is removed successfully; otherwise, false.</returns>
@@ -59,7 +83,15 @@
 		}
 
 		/// <summary>
-		/// Recursively adds a new node to the binary tree starting from the given current node.
+		///     <para>
+		///         Recursively adds a new node to the binary tree starting from the given current node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="newNode">The node to be added.</param>
 		/// <param name="currentNode">The current node being evaluated during insertion.</param>
@@ -90,7 +122,15 @@
 		}
 
 		/// <summary>
-		/// Recursively searches for a node with the specified value starting from the given current node.
+		///     <para>
+		///         Recursively searches for a node with the specified value starting from the given current node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to search for.</param>
 		/// <param name="currentNode">The current node being evaluated during the search.</param>
@@ -116,7 +156,15 @@
 		}
 
 		/// <summary>
-		/// Removes the specified node from the binary tree.
+		///     <para>
+		///         Removes the specified node from the binary tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node to be removed.</param>
 		/// <returns>True if the node is removed successfully; otherwise, false.</returns>
@@ -160,7 +208,15 @@
 		}
 
 		/// <summary>
-		/// Sets the child node of a parent node to the specified child node.
+		///     <para>
+		///         Sets the child node of a parent node to the specified child node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), the time complexity of this method depends on accessing the parent node and installing a new child node.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The parent node whose child node will be set.</param>
 		/// <param name="childNode">The child node to be set.</param>
@@ -177,7 +233,15 @@
 		}
 
 		/// <summary>
-		/// Finds the successor node of the specified node in the binary tree.
+		///     <para>
+		///         Finds the successor node of the specified node in the binary tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(h), where h is the height of the tree. O(log n) when the tree is balanced, where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node for which to find the successor.</param>
 		/// <returns>The successor node of the specified node.</returns>

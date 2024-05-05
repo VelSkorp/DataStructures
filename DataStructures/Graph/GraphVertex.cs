@@ -8,12 +8,12 @@
 		/// <summary>
 		/// Gets the name of the vertex.
 		/// </summary>
-		public string Name { get; }
+		public string Name { get; private set; }
 
 		/// <summary>
 		/// Gets the list of edges connected to this vertex.
 		/// </summary>
-		public List<GraphEdge> Edges { get; }
+		public List<GraphEdge> Edges { get; private set; }
 
 		/// <summary>
 		/// Initializes a new instance of the GraphVertex class with the specified name.

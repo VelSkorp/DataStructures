@@ -8,12 +8,12 @@
 		/// <summary>
 		/// Gets the vertex connected by this edge.
 		/// </summary>
-		public GraphVertex ConnectedVertex { get; }
+		public GraphVertex ConnectedVertex { get; private set; }
 
 		/// <summary>
 		/// Gets the weight of the edge.
 		/// </summary>
-		public int EdgeWeight { get; }
+		public int EdgeWeight { get; private set; }
 
 		/// <summary>
 		/// Initializes a new instance of the GraphEdge class with the specified connected vertex and weight.

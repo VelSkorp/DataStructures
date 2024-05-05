@@ -11,7 +11,7 @@
 		/// <summary>
 		/// Gets the value of the item.
 		/// </summary>
-		public TValue Value { get; }
+		public TValue Value { get; private set; }
 
 		/// <summary>
 		/// The key of the item.

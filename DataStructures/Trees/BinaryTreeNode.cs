@@ -76,6 +76,9 @@
 		/// Returns a string representation of the node's value.
 		/// </summary>
 		/// <returns>A string representing the value stored in the node.</returns>
-		public override string ToString() => Value.ToString();
+		public override string ToString()
+		{
+			return Value.ToString();
+		}
 	}
 }

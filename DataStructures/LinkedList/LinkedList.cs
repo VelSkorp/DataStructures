@@ -30,7 +30,15 @@ namespace LinkedList
 		private Node<T> _tail;
 
 		/// <summary>
-		/// Appends a new node containing the specified data at the beginning of the linked list.
+		///     <para>
+		///         Appends a new node containing the specified data at the beginning of the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since inserting a node at the beginning of a linked list is a simple pointer assignment operation.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="data">The data to add to the beginning of the linked list.</param>
 		public void AppendFirst(T data)
@@ -40,7 +48,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Appends the specified node at the beginning of the linked list.
+		///     <para>
+		///         Appends the specified node at the beginning of the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since inserting a node at the beginning of a linked list is a simple pointer assignment operation.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node to append to the beginning of the linked list.</param>
 		public void AppendFirst(Node<T> node)
@@ -55,7 +71,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Adds a new node containing the specified data at the end of the linked list.
+		///     <para>
+		///         Adds a new node containing the specified data at the end of the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since inserting a node at the end of a linked list is a simple pointer assignment operation.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="data">The data to add to the end of the linked list.</param>
 		public void Add(T data)
@@ -65,7 +89,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Adds the specified node at the end of the linked list.
+		///     <para>
+		///         Adds the specified node at the end of the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since inserting a node at the end of a linked list is a simple pointer assignment operation.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node to add to the end of the linked list.</param>
 		public void Add(Node<T> node)
@@ -83,7 +115,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Removes the first occurrence of the specified data from the linked list.
+		///     <para>
+		///         Removes the first occurrence of the specified data from the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="data">The data to remove from the linked list.</param>
 		/// <returns>True if the data was successfully removed; otherwise, false.</returns>
@@ -94,7 +134,7 @@ namespace LinkedList
 				return false;
 			}
 
-			if (_head.Data.Equals(data))
+			if (_head.Value.Equals(data))
 			{
 				_head = _head.Next;
 				if (_head is null)
@@ -109,7 +149,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Removes all elements from the linked list.
+		///     <para>
+		///         Removes all elements from the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), сlearing the linked list by setting the _head and _tail pointers to null and resetting the Count counter to zero takes constant time.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		public void Clear()
 		{
@@ -119,7 +167,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Determines whether the linked list contains the specified data.
+		///     <para>
+		///         Determines whether the linked list contains the specified data.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="data">The data to locate in the linked list.</param>
 		/// <returns>True if the data is found in the linked list; otherwise, false.</returns>
@@ -128,7 +184,7 @@ namespace LinkedList
 			var current = _head;
 			while (current is not null)
 			{
-				if (current.Data.Equals(data))
+				if (current.Value.Equals(data))
 				{
 					return true;
 				}
@@ -138,7 +194,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the linked list.
+		///     <para>
+		///         Returns an enumerator that iterates through the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the linked list.</returns>
 		public IEnumerator<T> GetEnumerator()
@@ -147,7 +211,15 @@ namespace LinkedList
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the linked list.
+		///     <para>
+		///         Returns an enumerator that iterates through the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the linked list.</returns>
 		IEnumerator IEnumerable.GetEnumerator()
@@ -155,13 +227,21 @@ namespace LinkedList
 			var current = _head;
 			while (current is not null)
 			{
-				yield return current.Data;
+				yield return current.Value;
 				current = current.Next;
 			}
 		}
 
 		/// <summary>
-		/// Recursively removes a node from the linked list.
+		///     <para>
+		///         Recursively removes a node from the linked list.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(n), where n is the number of elements in the list.
+		///     </para>
 		/// </summary>
 		/// <param name="previous">The node before the current node.</param>
 		/// <param name="current">The current node being evaluated.</param>
@@ -174,7 +254,7 @@ namespace LinkedList
 				return false;
 			}
 
-			if (current.Data.Equals(data))
+			if (current.Value.Equals(data))
 			{
 				previous.SetNext(current.Next);
 				if (current.Next is null)

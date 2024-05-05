@@ -8,7 +8,7 @@
 		/// <summary>
 		/// Gets the list of vertices in the graph.
 		/// </summary>
-		public List<GraphVertex> Vertices { get; }
+		public List<GraphVertex> Vertices { get; private set; }
 
 		/// <summary>
 		/// Initializes a new instance of the Graph class.
@@ -19,7 +19,15 @@
 		}
 
 		/// <summary>
-		/// Adds a vertex with the specified name to the graph.
+		///     <para>
+		///         Adds a vertex with the specified name to the graph.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), operation of adding an item to a List and creating a new GraphVertex instance has a constant time complexity.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(n), where n is the number of vertices in the graph.
+		///     </para>
 		/// </summary>
 		/// <param name="vertexName">The name of the vertex to add.</param>
 		public void AddVertex(string vertexName)
@@ -28,7 +36,15 @@
 		}
 
 		/// <summary>
-		/// Finds and returns the vertex with the specified name.
+		///     <para>
+		///         Finds and returns the vertex with the specified name.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of vertices in the graph.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="vertexName">The name of the vertex to find.</param>
 		/// <returns>The vertex with the specified name, or null if not found.</returns>
@@ -45,7 +61,15 @@
 		}
 
 		/// <summary>
-		/// Adds an edge between two vertices with the specified names and weight.
+		///     <para>
+		///         Adds an edge between two vertices with the specified names and weight.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of vertices in the graph.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="firstName">The name of the first vertex.</param>
 		/// <param name="secondName">The name of the second vertex.</param>

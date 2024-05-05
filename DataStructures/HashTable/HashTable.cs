@@ -11,7 +11,6 @@
 	public class HashTable<TKey, TValue>
 		where TKey : notnull, IEqualityComparer<TKey>
 	{
-
 		/// <summary>
 		/// Gets the size of the hash table.
 		/// </summary>
@@ -32,7 +31,15 @@
 		}
 
 		/// <summary>
-		/// Inserts an item into the hash table.
+		///     <para>
+		///         Inserts an item into the hash table.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements having the same hash.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The item to insert.</param>
 		/// <returns>True if the item is successfully inserted; otherwise, false.</returns>
@@ -50,7 +57,15 @@
 		}
 
 		/// <summary>
-		/// Deletes an item from the hash table.
+		///     <para>
+		///         Deletes an item from the hash table.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), searching for an item in the hash table and removing it from the set have constant time complexity.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The item to delete.</param>
 		/// <returns>True if the item is successfully deleted; otherwise, false.</returns>
@@ -67,7 +82,15 @@
 		}
 
 		/// <summary>
-		/// Searches for items with the specified key in the hash table.
+		///     <para>
+		///         Searches for items with the specified key in the hash table.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), searching for an item in the hash table have constant time complexity.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="key">The key to search for.</param>
 		/// <returns>A HashSet containing the values associated with the key, or null if no such key exists.</returns>
@@ -84,7 +107,15 @@
 		}
 
 		/// <summary>
-		/// Checks if the hash table contains the specified item.
+		///     <para>
+		///         Checks if the hash table contains the specified item.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), searching for an item in the hash table have constant time complexity.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The item to check.</param>
 		/// <returns>True if the item is found in the hash table; otherwise, false.</returns>

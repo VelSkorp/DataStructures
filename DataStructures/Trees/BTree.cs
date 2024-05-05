@@ -27,7 +27,15 @@
 		}
 
 		/// <summary>
-		/// Inserts a value into the B-tree.
+		///     <para>
+		///         Inserts a value into the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree. O(log n), where n is the number of nodes in the tree
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to insert.</param>
 		/// <returns><c>true</c> if the insertion was successful; otherwise, <c>false</c>.</returns>
@@ -51,7 +59,15 @@
 		}
 
 		/// <summary>
-		/// Deletes a value from the B-tree.
+		///     <para>
+		///         Deletes a value from the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree. O(log n), where n is the number of nodes in the tree
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The value to delete.</param>
 		/// <returns><c>true</c> if the deletion was successful; otherwise, <c>false</c>.</returns>
@@ -61,7 +77,15 @@
 		}
 
 		/// <summary>
-		/// Searches for a value in the B-tree.
+		///     <para>
+		///         Searches for a value in the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(H), where H is the height of the tree. O(log n) where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to search for.</param>
 		/// <returns>The node containing the value if found; otherwise, <c>null</c>.</returns>
@@ -71,7 +95,15 @@
 		}
 
 		/// <summary>
-		/// Inserts a value into the specified node of the B-tree.
+		///     <para>
+		///         Inserts a value into the specified node of the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree. O(log n), where n is the number of nodes in the tree
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to insert.</param>
 		/// <param name="node">The node where the value will be inserted.</param>
@@ -105,7 +137,15 @@
 
 
 		/// <summary>
-		/// Deletes a value from the specified node of the B-tree.
+		///     <para>
+		///         Deletes a value from the specified node of the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree. O(log n), where n is the number of nodes in the tree
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The value to delete.</param>
 		/// <param name="node">The node from which the value will be deleted.</param>
@@ -171,7 +211,15 @@
 		}
 
 		/// <summary>
-		/// Searches for a value in the specified node of the B-tree.
+		///     <para>
+		///         Searches for a value in the specified node of the B-tree.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(H), where H is the height of the tree. O(log n) where n is the number of nodes in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="value">The value to search for.</param>
 		/// <param name="node">The node where the search will be performed.</param>
@@ -198,7 +246,15 @@
 		}
 
 		/// <summary>
-		/// Splits a child node of the specified parent node at the specified index.
+		///     <para>
+		///         Splits a child node of the specified parent node at the specified index.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="parentNode">The parent node whose child will be split.</param>
 		/// <param name="childIndex">The index of the child node to split.</param>
@@ -226,7 +282,15 @@
 		}
 
 		/// <summary>
-		/// Retrieves the predecessor of the value at the specified index in the specified node.
+		///     <para>
+		///         Retrieves the predecessor of the value at the specified index in the specified node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree * log(N)), where Degree is the degree of the tree and N is the number of elements in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node containing the value.</param>
 		/// <param name="index">The index of the value in the node.</param>
@@ -242,7 +306,15 @@
 		}
 
 		/// <summary>
-		/// Retrieves the successor of the value at the specified index in the specified node.
+		///     <para>
+		///         Retrieves the successor of the value at the specified index in the specified node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree * log(N)), where Degree is the degree of the tree and N is the number of elements in the tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="node">The node containing the value.</param>
 		/// <param name="index">The index of the value in the node.</param>
@@ -258,7 +330,15 @@
 		}
 
 		/// <summary>
-		/// Borrows a value from the left sibling node of the specified child node in the specified parent node.
+		///     <para>
+		///         Borrows a value from the left sibling node of the specified child node in the specified parent node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="parentNode">The parent node containing the child node.</param>
 		/// <param name="childIndex">The index of the child node.</param>
@@ -280,7 +360,15 @@
 		}
 
 		/// <summary>
-		/// Borrows a value from the right sibling node of the specified child node in the specified parent node.
+		///     <para>
+		///         Borrows a value from the right sibling node of the specified child node in the specified parent node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="parentNode">The parent node containing the child node.</param>
 		/// <param name="childIndex">The index of the child node.</param>
@@ -302,7 +390,15 @@
 		}
 
 		/// <summary>
-		/// Merges the specified child node with its sibling node at the specified index in the specified parent node.
+		///     <para>
+		///         Merges the specified child node with its sibling node at the specified index in the specified parent node.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(Degree), where Degree is the degree of the B-tree.
+		///     </para>
 		/// </summary>
 		/// <param name="parentNode">The parent node containing the child nodes.</param>
 		/// <param name="childIndex">The index of the child node to merge.</param>

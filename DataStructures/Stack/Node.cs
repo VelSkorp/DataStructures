@@ -7,9 +7,9 @@
 	public class Node<T>
 	{
 		/// <summary>
-		/// Gets the data stored in the node.
+		/// Gets the value stored in the node.
 		/// </summary>
-		public T Data { get; private set; }
+		public T Value { get; private set; }
 
 		/// <summary>
 		/// Gets the reference to the next node in the stack.
@@ -17,12 +17,12 @@
 		public Node<T> Next { get; private set; }
 
 		/// <summary>
-		/// Initializes a new instance of the Node&lt;T&gt; class with the specified data.
+		/// Initializes a new instance of the Node&lt;T&gt; class with the specified value.
 		/// </summary>
-		/// <param name="data">The data to be stored in the node.</param>
-		public Node(T data)
+		/// <param name="value">The value to be stored in the node.</param>
+		public Node(T value)
 		{
-			Data = data;
+			Value = value;
 		}
 
 		/// <summary>
@@ -32,6 +32,15 @@
 		public void SetNext(Node<T> next)
 		{
 			Next = next;
+		}
+
+		/// <summary>
+		/// Returns a string representation of the value.
+		/// </summary>
+		/// <returns>A string representing the value.</returns>
+		public override string ToString()
+		{
+			return Value.ToString();
 		}
 	}
 }

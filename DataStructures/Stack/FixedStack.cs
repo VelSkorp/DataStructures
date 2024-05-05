@@ -55,7 +55,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Adds an item to the top of the stack.
+		///     <para>
+		///         Adds an item to the top of the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since the element is added to the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The item to push onto the stack.</param>
 		/// <exception cref="StackOverflowException">Thrown when the stack is full.</exception>
@@ -69,7 +77,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Removes and returns the item at the top of the stack.
+		///     <para>
+		///         Removes and returns the item at the top of the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since the element is removed from the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>The item removed from the top of the stack.</returns>
 		/// <exception cref="InvalidOperationException">Thrown when the stack is empty.</exception>
@@ -85,7 +101,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Returns the item at the top of the stack without removing it.
+		///     <para>
+		///         Returns the item at the top of the stack without removing it.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since it simply returns the value of the element at the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>The item at the top of the stack.</returns>
 		/// <exception cref="InvalidOperationException">Thrown when the stack is empty.</exception>
@@ -99,7 +123,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the stack.
+		///     <para>
+		///         Returns an enumerator that iterates through the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the stack.</returns>
 		public IEnumerator<T> GetEnumerator()
@@ -108,7 +140,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the stack.
+		///     <para>
+		///         Returns an enumerator that iterates through the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the stack.</returns>
 		IEnumerator IEnumerable.GetEnumerator()

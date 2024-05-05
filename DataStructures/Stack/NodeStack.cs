@@ -24,7 +24,15 @@ namespace Stack
 		private Node<T> _head;
 
 		/// <summary>
-		/// Adds an item to the top of the stack.
+		///     <para>
+		///         Adds an item to the top of the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since the element is added to the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <param name="item">The item to push onto the stack.</param>
 		public void Push(T item)
@@ -36,7 +44,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Removes and returns the item at the top of the stack.
+		///     <para>
+		///         Removes and returns the item at the top of the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since the element is removed from the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>The item removed from the top of the stack.</returns>
 		/// <exception cref="InvalidOperationException">Thrown when the stack is empty.</exception>
@@ -49,11 +65,19 @@ namespace Stack
 			var temp = _head;
 			_head = _head.Next;
 			Count--;
-			return temp.Data; 
+			return temp.Value; 
 		}
 
 		/// <summary>
-		/// Returns the item at the top of the stack without removing it.
+		///     <para>
+		///         Returns the item at the top of the stack without removing it.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(1), since it simply returns the value of the element at the end.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>The item at the top of the stack.</returns>
 		/// <exception cref="InvalidOperationException">Thrown when the stack is empty.</exception>
@@ -63,11 +87,19 @@ namespace Stack
 			{
 				throw new InvalidOperationException("Stack is empty"); 
 			}
-			return _head.Data;
+			return _head.Value;
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the items in the stack.
+		///     <para>
+		///         Returns an enumerator that iterates through the items in the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the stack.</returns>
 		public IEnumerator<T> GetEnumerator()
@@ -76,7 +108,15 @@ namespace Stack
 		}
 
 		/// <summary>
-		/// Returns an enumerator that iterates through the items in the stack.
+		///     <para>
+		///         Returns an enumerator that iterates through the items in the stack.
+		///     </para>
+		///     <para>
+		///         Time Complexity: O(n), where n is the number of elements in the linked list.
+		///     </para>
+		///     <para>
+		///         Space Complexity: O(1), doesn't create any new data structures.
+		///     </para>
 		/// </summary>
 		/// <returns>An enumerator that can be used to iterate through the stack.</returns>
 		IEnumerator IEnumerable.GetEnumerator()
@@ -84,7 +124,7 @@ namespace Stack
 			var current = _head;
 			while (current != null)
 			{
-				yield return current.Data;
+				yield return current.Value;
 				current = current.Next;
 			}
 		}
